@@ -31,6 +31,11 @@ public class CourseController
 
     }
 
+    @GetMapping
+    public ResponseEntity<?> getAllCourses() {
+        return ResponseEntity.ok(courseService.findAllCourses());
+    }
+
 
 
 }
